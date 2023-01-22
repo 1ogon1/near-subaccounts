@@ -103,7 +103,7 @@ impl ProgramBuilder {
             let input: String = Input::with_theme(&ColorfulTheme::default())
                 .with_prompt(SETUP_MASTER_PROMPT)
                 .validate_with(|input: &String| -> Result<(), &str> {
-                    if input != "*" {
+                    if input.trim() != "*" {
                         match AccountId::from_str(input) {
                             Ok(account_id) => {
                                 if !account_id.is_implicit() {
