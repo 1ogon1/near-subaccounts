@@ -1,0 +1,15 @@
+[package]
+name = "reader-near-subaccounts"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+dialoguer = "0.10.3"
+dirs = "4.0.0"
+near-jsonrpc-client = "0.4.1"
+near-jsonrpc-primitives = "0.15.0"
+near-primitives = "0.15.0"
+near-crypto = "0.15.0"
